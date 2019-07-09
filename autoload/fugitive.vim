@@ -5820,6 +5820,7 @@ function! fugitive#MapJumps(...) abort
     nnoremap <buffer>          r<CR> :Git rebase<CR>
     nnoremap <buffer> <silent> ri    :<C-U>Grebase --interactive<C-R>=<SID>RebaseArgument()<CR><CR>
     nnoremap <buffer> <silent> rf    :<C-U>Grebase --autosquash<C-R>=<SID>RebaseArgument()<CR><CR>
+    nnoremap <buffer> <silent> rF    :<C-U>Grebase --autosquash --interactive<C-R>=<SID>RebaseArgument()<CR><CR>
     nnoremap <buffer> <silent> ru    :<C-U>Grebase --interactive @{upstream}<CR>
     nnoremap <buffer> <silent> rp    :<C-U>Grebase --interactive @{push}<CR>
     nnoremap <buffer> <silent> rw    :<C-U>Grebase --interactive<C-R>=<SID>RebaseArgument()<CR><Bar>s/^pick/reword/e<CR>
